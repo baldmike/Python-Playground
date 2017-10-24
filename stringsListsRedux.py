@@ -16,7 +16,7 @@ for n in range(0, len(x)):
 print "max: ", max
 print "min: ", min
 
-y = ["hello", 2, 43, 4, 563465, "poop", ["grapes", "farts"]]
+y = ["hello", 2, 43, 4, 563465, "apex", ["grapes", "Zenith"]]
 print "first: ", y[0]
 print "second: ", y[-1]
 new = [y[0], y[-1]]
@@ -61,7 +61,7 @@ eI = 0
 spI = -23
 sS = "Rubber baby buggy bumpers"
 mS = "Experience is simply the name we give our mistakes"
-bS = "Tell me and I forget. Teach me and I remember. Involve me and I learn."
+bS = "Tell me and I forget. Teach me and I remember. Involve me and I learn. Touch me, and I'll kill ya."
 eS = ""
 aL = [1,7,4,21]
 mL = [3,5,7,34,3,2,113,65,8,89]

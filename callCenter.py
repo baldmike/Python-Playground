@@ -37,15 +37,18 @@ class CallCenter(object):
         
 
     def remove(self, *number):
+        print "REMOVING " + str(number)
         if not number:
+            print "if not number IS HITTING"
             CallCenter.call_list.pop(0)
             self.queue -= 1
             return self
         else:
             for call in CallCenter.call_list:
-                if call.number == number:
-                    CallCenter.call_list.pop(0)
+                if (call.number == number):
+                    CallCenter.call_list.pop()
                     self.queue -= 1
+                    print str(number) + " has been 86'ed"
                     return self
     
 call1 = Call("Joe", 3125882300, "Birds in chimney")
@@ -59,9 +62,12 @@ center = CallCenter()
 center.info()
 
 center.add("Bert", 3124768976, "Ever seen one like this?")
-center.add("Mary", 3213345994, "Toe stuck in drainpipe")
+center.add("Mary", 3121234567, "Toe stuck in drainpipe")
 
-center.remove()
+center.info()
+
+print 100*"$"
+center.remove(3122021234)
 center.info()
 
 
